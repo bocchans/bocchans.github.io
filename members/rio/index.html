@@ -1,0 +1,49 @@
+<h1>もりＰ(りおぼっちゃん)</h1>
+
+作ったゲーム？↓<br>
+<a href="shigejigejinozoushoku">しゲジゲジの増殖<a>
+  
+  
+<br><br>
+<h3>ぜひ友達に共有してください！</h3>
+<p><div class="copy_btn" data-clipboard-text="http://www.bocchans.ml/members/rio/">リンクをコピー</div></p>
+<style>
+/* コピーボタン */
+.copy_btn {
+  width:80%!important;
+  padding: 12px 0;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  color:#ffffff;
+  font-weight:bold;
+  background:#000000;
+  border: solid 2px #000000;
+  border-radius: 3px;
+  transition: .4s;
+  
+  text-align: center;
+}
+ 
+.copy_btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+.copy_btn:hover {
+	cursor: pointer;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- ↓クリップボード操作のために使用するjsを読み込む　( https://clipboardjs.com/ ) -->
+<script src="https://cdn.jsdelivr.net/clipboard.js/1.5.13/clipboard.min.js"></script>
+ 
+<script>
+var clipboard = new Clipboard('.copy_btn');    //clipboard.min.jsが動作する要素をクラス名で指定
+ 
+//クリックしたときの挙動
+$(function(){
+    $('.copy_btn').click(function(){
+        $(this).addClass('copied');    //ボタンの色などを変更するためにクラスを追加
+        $(this).text('コピーしました!');    //テキストの書き換え
+    });
+});
+</script>
